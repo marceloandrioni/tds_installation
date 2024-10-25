@@ -64,6 +64,8 @@ Note: by default, all the TDS content will be stored in `/usr/local/tds/content`
 
 Note: by default, the maximum allocated memory for TDS is only 4GB. You can change this editing the `-Xmx` flag in `setenv.sh`
 
+Note: if the Tomcat server will be behind a proxy (usual in a corporate setup), uncomment and configure the proxy section the `setenv.sh` file.
+
 Copy the `tomcat-users.xml` file to `/usr/local/tds/tomcat/conf`. This file defines the manager role, so the user can access the [Manager Application](http://localhost:8080/manager/html/) after Tomcat is started.
 
 ```
